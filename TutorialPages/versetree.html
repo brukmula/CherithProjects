@@ -25,24 +25,25 @@
         <section id="steps">
             <section id="overview">
                 <hgroup>
-                    <h2>Bible Verse Tree Tutorial</h2>
+                    <h2>Syntax trees of the Bible</h2>
                     <h3>A brief overview of Syntactic Bible Tree app.</h3>
                 </hgroup>
                 <p>This tutorial will guide you through the different language functionalities used in the Syntactic Bible Tree app.</p>
                 <a href="https://bible-syntaxtree.web.app/" target="_blank">Access the website here.</a>
-                <p>This tool will provide great assistance with developing your language education in the bible as well as being able to dissect more complex sentences in the bible.</p>
+                <p>Syntax trees are visual representations of the grammatical structure of sentences. These trees break down sentences into their constituent parts, such as clauses, phrases, and words, and show how these components are organized and relate to each other within the sentence.  They assist you in
+                    developing your language education in the bible as well as being able to dissect more complex sentences in the bible.</p>
             </section>
             <hgroup>
                 <h2>Step-by-Step Guide</h2>
             </hgroup>
             <!-- Step 1 -->
             <h3>Step 1: Getting Started</h3>
-            <p>When you open the link to the site, you should notice a website, you should notice a navigation bar that looks like this</p>
+            <p>When you open the website, you should see you should see a navigation bar that looks like this</p>
             <figure>
                 <img src="../images/tutorials/tree/treeNavBar.PNG" alt="Step 1 Illustration" />
                 <figcaption>Navigation Bar</figcaption>
             </figure>
-            <p>The "Book" option will let you select a verse in the bible to be viewed. The "Setting" option let you customize the output. </p>
+            <p>The "Book" option lets you select a verse in the bible to be viewed. The "Setting" option lets you customize the output. </p>
             <p>This will be explained further in the next step. Go ahead and select a verse from the "Book" option. You can only select one verse at a time. </p>
             <!-- Step 2 -->
             <h3>Step 2: Adjusting Settings</h3>
@@ -51,48 +52,49 @@
                 <img src ="../images/tutorials/tree/treeExample.PNG">
                 <figcaption>Tree Example</figcaption>
             </figure>
-            <p>If you chose a verse from The Old Testament you should see a tree with Hebrew at the bottom. If you chose a New Testament verse, it should be in Greek.</p>
+            <p>If you chose a verse from The Old Testament you should see a tree with Hebrew at the bottom. If you chose a New Testament verse, it should be in Greek. The Hebrew trees are verse-based,while the Greek trees are sentence-based, where a tree can cover part of a verse or span more than one verse.
+            </p>
             <p>When you hover over any of the blue text of the tree, you should see a small yellow box pop over the text. It looks like this: </p>
             <figure>
                 <img src ="../images/tutorials/tree/treeHoverBox.png">
                 <figcaption>Pop Over Box</figcaption>
             </figure>
-            <p>This is the popover box that gives a reference number as well description of the part of speech that the word is used in. How to change the content of the popover is described below.</p>
+            <p>This popover box  a shows the Strong number of the word and its morphological properties such as part of speech, person, number, gender, tense, voice, etc. Instructions to change the content of the popover can be found below.</p>
             <p>When you click the "Setting" button, you will see a popup window that looks like this</p>
             <figure>
                 <img src ="../images/tutorials/tree/treeSetting.PNG">
                 <figcaption>Settings</figcaption>
             </figure>
-            <p>The <b>Old Testament</b> option determines how you want the Hebrew of the Old Testament to be displayed. Since Hebrew is read from left to right, you are given the option of reading it in its original direction.</p>
-            <p>The <b>Glossary Language</b> option lets you pick which language is displayed below the original text. You can choose English, Chinese, or both. An example of this can be seen in the Tree Example above, where the English below it is displayed below the Hebrew.</p>
+            <p>The <b>Old Testament</b> option determines how you want the Hebrew text of the Old Testament to be displayed. Since Hebrew is read from right to left, the default display is right-to-left, but you are given the option of reading it from left to right.</p>
+            <p>The <b>Glossary Language</b> option lets you pick which language is displayed below the original text. You can choose English, Chinese, or both. An example of this can be seen in the Tree Example above, where the English text is below the Hebrew text.</p>
             <p>The<b> Popover Language</b> options lets you choose what language the popover box displays. Unlike <b>Glossary Language</b> you can only choose one language at a time. </p>
             <!-- Additional steps as needed -->
 
             <h3>Step 3: Understanding the Tree</h3>
-            <p>Now that you have loaded the tree and understand the settings, you can begin analyzing the tree structure. Below is an explanation for the grammar rules and structure of the tree. These are applicable to both Greek and Hebrew translations.</p>
+            <p>Now that you have loaded the tree and understand the settings, you can begin analyzing the tree structure. Below is an explanation of the tree structure of the tree. It is applicable to both Greek and Hebrew.</p>
             <p>For the purpose of this tutorial, here is another example tree, this time in Greek.</p>
             <figure>
                 <img src ="../images/tutorials/tree/treeExampleGreek.PNG">
                 <figcaption>Greek Tree</figcaption>
             </figure>
-            <p> <b>Top Label ("Verse"): </b> Represents the entire sentence or verse being analyzed.</p>
+            <p> <b>Root Label ("Verse"): </b> Represents the entire sentence or verse being analyzed.</p>
             <p><b>Tree Structure: </b> the branches show how the sentence is broken down into smaller parts, called constituents.</p>
             <h4 id ="constituentLabels">Constituent Labels: </h4>
             <ul>
-                <li><b>CL: </b> Clause, the main part of the sentence containing a subject of the predicate.</li>
-                <li><b>SUBJ: </b> Subject, the doer of the action or the topic of the sentence.</li>
-                <li><b>V: </b> Verb, indicating the action or state of being.</li>
+                <li><b>CL: </b> a syntactic unit usually containing a subject and a predicate.</li>
+                <li><b>SUBJ: </b> Subject, the doer of an action or the topic of a sentence.</li>
+                <li><b>V: </b> Verb, indicating an event/action or state of being.</li>
                 <li><b>PP: </b> Prepositional Phrase, a modifying phrase consisting of a preposition and it's object.</li>
-                <li><b>OBJ: </b>Object, which receives the action of the verb.</li>
+                <li><b>OBJ: </b>Object, the receiver/goal of the action of the verb.</li>
                 <li><b>np: </b>Noun Phrase, a group of words that act together as a noun.</li>
             </ul>
             <h4>Parts of Speech: </h4>
             <ul>
                 <li><b>noun: </b>Naming a word for a person, place, thing, or idea.</li>
                 <li><b>det:</b>Determiner, a word that introduces a noun (like "the")</li>
-                <li><b>om: </b> Object marker, in this case, it seems to be a symbol representing the absence of an object marker in the original text.</li>
+                <li><b>om: </b> Object marker, a Hebrew-specific word that marks the direct object of a sentence.</li>
                 <li><b>conj: </b>Conjunction, a word that connects clauses or sentences or coordinates words in the same clause. (like"and)</li>
-                <li><b>verb: </b> A word that represents an action or state of being</li>
+                <li><b>verb: </b> A word that represents an event/action or state of being</li>
                 <li><b>prep: </b> Preposition, a word used to link nouns,pronouns, or phrases to other words within a sentence.</li>
             </ul>
             <p><b>Direction of Analysis:</b> The tree structure typically moves from top (the whole sentence) to bottom (individual words or morphemes), demonstrating how each part of the sentence relates to the whole.</p>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <title>Concordance</title>
+    <title>Multidimensional Concordance</title>
 </head>
 <body>
 <nav class="container-fluid">
@@ -24,8 +24,8 @@
     <div class="grid">
         <section id="steps">
             <hgroup>
-                <h2>How to Use Concordance</h2>
-                <h3>A brief overview of what concordance web app.</h3>
+                <h2>How to Use the Concordance</h2>
+                <h3>A brief overview of the concordance web app.</h3>
             </hgroup>
             <p>This tutorial will guide you through using the concordance web application.</p>
             <hgroup>
@@ -40,13 +40,13 @@
             </figure>
             <p>The toggle switch turns on and off the <a href = "versetree.html#constituentLabels">constituent labels</a>. This will be shown further in <b>Step 3.</b></p>
             <p>Next to the toggle switch is a dropdown navigation bar that lets you select which bible translation you want to use.</p>
-            <p>Currently there are three translation available.</p>
+            <p>Currently, there are three translation available. (more translations to be added)</p>
             <ul>
                 <li>English Standard Version</li>
-                <li>新标点和合本 (Chinese Translation), and</li>
-                <li>Nestle-Aland 28 (Original Greek. Only available for New Testament verses)</li>
+                <li>新标点和合本 (Chinese Union Version), and</li>
+                <li>Nestle-Aland 28 (Original Greek of the New Testament verses)</li>
             </ul>
-            <p>You're selection will determine which version is displayed.</p>
+            <p>Your selection will determine which version is displayed.</p>
             <!-- Step 2 -->
             <h3>Step 2: Selecting a Verse</h3>
             <p> On the left side of the light blue navigation bar is a section that looks like this.</p>
@@ -54,11 +54,11 @@
                 <img src="../images/tutorials/concordance/concordanceVerseSelect.png" alt="Step 1 Illustration" />
                 <figcaption>Verse Select</figcaption>
             </figure>
-            <p>This section lets you select the verse you want to see. You can either type in the name of the book followed by the chapter and verse, or you can use the little book icon next to it to select the verse manually.</p>
-            <p>If you choose to type in the verse, it is recommended to type in the full book name to make sure it shows up.</p>
-            <p>The arrows let you scroll through different versions</p>
+            <p>This section lets you select the verse you want to see. You can either type in the verse reference (e.g. Genesis 1:1), or you can use the little book icon next to it to select the verse.</p>
+            <p>If you choose to type in the verse reference, you can also type in shorthand versions of the book. (e.g. Gen or Gn for Genesis)</p>
+            <p>The arrows let you go to the previous or next verse of the current verse.</p>
             <!-- Step 3 -->
-            <h3>Step 3: Verse Breakdown</h3>
+            <h3>Step 3: Unfolding the Verse</h3>
             <p>Once you have selected a verse, the web app will display the verse in the left hand box of the webpage. Here is an example:</p>
             <figure>
                 <img src="../images/tutorials/concordance/concordanceVerse.png" alt="Step 1 Illustration" />
@@ -69,39 +69,40 @@
                 <img src="../images/tutorials/concordance/concordanceVerseBreakdown.png" alt="Step 1 Illustration" />
                 <figcaption>Concordance Verse Subsections</figcaption>
             </figure>
-            <p> If you want to bring the parts back together, just click the minus sign (-) and it will return them to the previous iteration.</p>
-            <p> If you turn on the toggle switch from <b>Step 1</b> you will see little boxes next to each subsection. This will display the <a href = "versetree.html#constituentLabels" target = "_blank">constituent labels</a>.</p>
+            <p> If you want to bring the parts back together, just click the minus sign (-) and it will return them to the previous level.</p>
+            <p> If you turn on the toggle switch from <b>Step 1</b> you will see little boxes next to each subsection that shows its <a href = "versetree.html#constituentLabels" target = "_blank">constituent labels</a>.</p>
             <figure>
                 <img src="../images/tutorials/concordance/concordanceToggle.png" alt="Step 1 Illustration" />
-                <figcaption>Toggle Constitute </figcaption>
+                <figcaption>Toggle Constituent </figcaption>
             </figure>
             <h3>Step 4: Concordance Search</h3>
-            <p>Now that you have broken down the verse to your liking, you should notice that some words are greyed out and the others words aren't.</p>
-            <p>If a word isn't greyed out, click on it and a page should appear on the right hand side of the screen.</p>
+            <p>Now that you have broken down the verse to your liking, you should notice that some words are grayed out and the others words aren't.he words in black all have corresponding words in the manuscript, while the gray ones are added in the translation either to reflect the morphology of the manuscript words or to meet the grammatical requirements of the translation language.
+            </p>
+            <p>If a subsection contains words that are not grayed out, click on it and a page should appear on the right hand side of the screen.</p>
             <figure>
                 <img src="../images/tutorials/concordance/concordanceView.png" alt="Step 1 Illustration" />
                 <figcaption>Concordance Search</figcaption>
             </figure>
-            <p>Depending on the text that you select you will see a large Hebrew or Greek word/sentence, which is the original text. And the number(s) below it being reference numbers of the original text.</p>
-            <p>Below the reference number is a series of tabs that lead you to different study tools. Each tool is different depending on the word, but there are up to 4 tabs per selected text.</p>
+            <p>At the top of the pane, you will see a large Hebrew or Greek word/phrase with its Strong number(s) beneath it, which is the original text which is the original text the subsection is translated from.</p>
+            <p>Under that is a series of tabs that lead you to different study tools for the selected subsection. There are up to 4 tabs per selected text.</p>
             <ul>
-                <li><b>Versions:</b> Display the translation of the selected text across different translations in the same language.</li>
+                <li><b>Versions:</b>  Translations of the selected section in different versions.  Each different translation may cover a different aspect of its meaning, thus providing a more rounded understanding of the text. </li>
                 <li>
-                    <b>Concordance: </b>This option lets you go through all verbal indexes of that word in the bible. Select a word that pops up in this section, and it will display all connecting sections in the bottom section of the webpage.
+                    <b>Concordance: </b>This lets you go through all instances of the selected text and see how it is translated in the whole Bible. Select a translation that pops up in this section, and all the verses where this particular translation of the manuscript text occurs will be displayed in the bottom section of the webpage.
                     <figure>
                     <img src="../images/tutorials/concordance/concordanceText.png" alt="Step 1 Illustration" />
                     <figcaption>Concordance Results</figcaption>
                     </figure>
                 </li>
                 <li>
-                    <b>Similar Phrases in OT/NT: </b>Let's you explore through similar phrases and their references in both the New and Old Testament. Some text is only present in one section, so these options aren't always available.
+                    <b>Similar Phrases in OT/NT: </b>This lets you explore words/phrases which come from manuscript texts in that are different from the one at the top of the pane but are similar or related in meaning. Those similar phrases can be in both the New and Old Testaments.
                     <figure>
                         <img src="../images/tutorials/concordance/concordancePhrases.png" alt="Step 1 Illustration" />
                         <figcaption>Similar Phrases</figcaption>
                     </figure>
                 </li>
-
             </ul>
+            <p><b>DISCLAIMER: The data in this section was created automatically through machine learning and has not been manually verified. The quality of the data will keep improving as we improve the learning algorithm.  Eventually the data will be checked by hand.</b></p>
         </section>
     </div>
 </main>
