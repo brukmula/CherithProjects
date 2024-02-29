@@ -1,10 +1,76 @@
 body {
-    background-color: #234;
-    position: absolute;
-    inset: 0;
-    display: flex;
-    place-content: center;
-    align-items: center;
-    overflow: hidden;
-    font-family: "Adobe Devanagari", serif;
+    background-color: #0A192F; /* Dark blue background */
+    color: #E0E1DD; /* Light grey text color for readability */
 }
+
+.navbar, footer {
+    background-color: #112240; /* Slightly lighter blue for navbar and footer */
+    color: #E0E1DD;
+}
+
+.navbar a, footer a {
+    color: #E0E1DD; /* Ensuring links are visible against the dark background */
+}
+
+.card {
+    background-color: #133B5C; /* Dark card backgrounds for contrast */
+    color: #E0E1DD;
+}
+
+.btn-primary {
+    background-color: #1D4E89; /* Dark blue buttons */
+    border-color: #1D4E89; /* Button border to match */
+}
+
+.btn-primary:hover {
+    background-color: #276FBF; /* Lighter blue on hover for a nice effect */
+    border-color: #276FBF;
+}
+
+.dropdown-menu {
+    background-color: #112240; /* Dropdown background */
+    color: #E0E1DD;
+}
+
+.dropdown-item {
+    color: #E0E1DD; /* Dropdown item text color */
+}
+
+.dropdown-item:hover {
+    background-color: #1D4E89; /* Dark blue hover for dropdown items */
+}
+
+.card {
+    flex: 1 1 200px; /* Adjust the flex-basis to control the card's base size */
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    border: 1px solid #ddd; /* Optional */
+    border-radius: 5px; /* Optional */
+}
+
+.card img {
+    width: 100%; /* Make image fill the width of the card */
+    height: 300px; /* Fixed height for all images */
+    object-fit: cover; /* Adjust as needed to cover or contain without distortion */
+    border-top-left-radius: 5px; /* Optional, to match card border-radius */
+    border-top-right-radius: 5px; /* Optional, to match card border-radius */
+}
+.card-body {
+    padding: 15px;
+    flex-grow: 1; /* Makes the body take up available space */
+}
+
+
+/* Optional: Add custom styles for links within the card bodies for better visibility */
+.card-body a {
+    color: #CAE0FF; /* Light blue links for better visibility against dark backgrounds */
+}
+
+.card-body a:hover {
+    color: #FFD700; /* Gold color on hover for links to make them stand out */
+}
+
+
