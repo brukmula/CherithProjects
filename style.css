@@ -38,6 +38,7 @@ body {
 
 .dropdown-item:hover {
     background-color: #1D4E89; /* Dark blue hover for dropdown items */
+    color: white;
 }
 
 .card {
