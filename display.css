@@ -22,7 +22,7 @@ p{
     border-radius: 5px; /* Rounded corners for the background */
 }
 .carousel-item img {
-    height: 500px; /* Fixed height for all images */
+    height: 500px; /* Fixed height for all ai */
     object-fit: cover; /* Cover ensures the aspect ratio is maintained while covering the area */
     width: 100%; /* Ensure width is always 100% of the container */
 }

@@ -1,0 +1,330 @@
+/* Basic Reset */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', sans serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    animation-name: fadeIn;
+    background-color: white;
+    color: #121212;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;      /* Use Flexbox */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Align items vertically */
+    padding: 10px;      /* Some padding */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    display: flex;      /* Use Flexbox for the list */
+}
+
+
+nav ul li {
+    margin-left: 20px;  /* Space between list items */
+}
+
+nav a {
+    color: black;
+    opacity: 60%;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    opacity: 100%;
+    text-decoration: none;
+}
+
+a {
+    color: #3B8AEA;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+}
+
+/* Hero Section */
+.hero {
+    transition: transform 0.3s ease;
+    background-color: #1e1e1e;
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero button {
+    background-color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Tool section and cards */
+
+.banner {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 40px 0; /* Increase margin to match the gap in grid layout */
+    background-color: #ffcc00; /* Darker background for the banner */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Darker shadow for better contrast */
+    color: black; /* Text color to match the body */
+}
+
+.banner img {
+    width: 100px; /* Adjust based on your design needs */
+    height: auto;
+    margin-right: 20px;
+}
+
+.banner-text h2 {
+    font-size: 24px;
+    color: black; /* Ensure text is bright for readability */
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 16px;
+    color: black; /* Lighter grey for subtext */
+    margin: 5px 0 0;
+}
+
+.tool-selection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1600px;
+    margin: auto;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+    .tool-selection {
+        grid-template-columns: 1fr; /* One card per row */
+    }
+}
+
+.tool-card {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 8px;
+    flex: 1; /* Allows the card to grow and fill the space */
+    min-width: 350px; /* Minimum width of the card */
+    max-width: 450px; /* Maximum width of the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card .normalImage{
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.tool-card .wideImage{
+    width: 200px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.tool-card img:hover {
+    transform: scale(1.10);
+}
+
+
+button {
+    background-color: #1637EB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3B8AEA;
+}
+
+.instructions {
+    max-width: 800px;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.instructions-section {
+    margin: 20px;
+}
+
+.instructions img{
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.instructions h1{
+    font-size: 60px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.instructions h2{
+    font-size: 30px;
+}
+
+.instructions p{
+    font-size: x-large;
+    text-align: center;
+    margin: 5px;
+}
+
+.instructions button{
+    font-size: large;
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* How We Can Help Section Styles */
+.how-we-can-help {
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.how-we-can-help h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.how-we-can-help p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Image Grid Styles */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+    gap: 20px;
+    padding: 0 50px; /* Adjust padding as needed */
+}
+
+.image-card {
+    background: #fff;
+    padding: 10px;
+}
+
+.image-card img {
+    width: 100%; /* Adjust based on your design */
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.image-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.image-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: 1fr; /* Stack ai vertically on smaller screens */
+    }
+}
