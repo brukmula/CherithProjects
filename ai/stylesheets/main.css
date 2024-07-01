@@ -79,8 +79,8 @@ main {
 
 /* Hero Section */
 .hero {
+    background-image: url('../../images/ai/hero-background.jpg');
     transition: transform 0.3s ease;
-    background-color: #1e1e1e;
     background-size: cover;
     background-position: center;
     padding: 60px;
